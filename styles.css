@@ -28,7 +28,7 @@ img {
 h1.title {
 	font-size: 2em;
 	font-weight: bold;
-	color: #800000; 
+	color: #800000;
 	border-bottom: 2px solid #ccc;
 	padding-bottom: 10px;
 	margin-top: 0;
@@ -48,8 +48,24 @@ h1.title {
 	width: auto;
 }
 
-.description, .note {
+.description,
+.note {
 	margin-bottom: 1.5em;
+}
+
+.main-nav {
+	text-align: left;    
+	margin-bottom: 1em;
+	font-size: 0.95em;
+}
+
+.main-nav a {
+	color: #666666;
+	margin: 0 10px;
+}
+
+.main-nav a:first-child {
+    margin-left: 0;
 }
 
 /* Fix for Japanese kanji to keep them together */
@@ -68,7 +84,7 @@ footer {
 
 .alice-dance {
 	float: right;
-	width: 25%; 
+	width: 25%;
 	max-width: 250px;
 	min-width: 180px;
 	margin-left: 20px;
@@ -76,7 +92,7 @@ footer {
 }
 
 .discord-join {
-	clear: both; 
+	clear: both;
 	font-size: 1.2em;
 	font-weight: bold;
 	padding: 15px;
@@ -114,9 +130,13 @@ footer {
 		margin-top: 10px;
 		padding: 0 10px;
 	}
-	
+
 	h1.title {
 		justify-content: center;
+	}
+	
+	.main-nav {
+		text-align: center; /* Keep it centered on mobile for better looks */
 	}
 
 	.content-wrapper {
@@ -124,15 +144,18 @@ footer {
 		flex-direction: column;
 		overflow: visible;
 	}
-	
+
 	.main-content {
 		order: 1;
 	}
-	
-	header, .note, .discord-join, footer {
+
+	header,
+	.note,
+	.discord-join,
+	footer {
 		text-align: center;
 	}
-	
+
 	.alice-dance {
 		order: 2;
 		float: none;
