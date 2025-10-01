@@ -1,0 +1,142 @@
+body {
+	background-color: #FFFFE0;
+	font-family: Verdana, Geneva, sans-serif;
+	color: #000000;
+	line-height: 1.5;
+	max-width: 900px;
+	margin: 20px auto;
+	padding: 0 20px;
+}
+
+a {
+	color: #0000EE;
+}
+
+a:visited {
+	color: #551A8B;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+.content-wrapper {
+	overflow: auto;
+}
+
+h1.title {
+	font-size: 2em;
+	font-weight: bold;
+	color: #800000; 
+	border-bottom: 2px solid #ccc;
+	padding-bottom: 10px;
+	margin-top: 0;
+	margin-bottom: 1em;
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.title .title-gif {
+	line-height: 0;
+	margin: 0 0.3em;
+}
+
+.title .title-gif img {
+	height: 1.2em;
+	width: auto;
+}
+
+.description, .note {
+	margin-bottom: 1.5em;
+}
+
+/* Fix for Japanese kanji to keep them together */
+.japanese-text {
+	word-break: keep-all;
+	white-space: nowrap;
+}
+
+footer {
+	margin-top: 2em;
+	padding-top: 1em;
+	border-top: 1px solid #ccc;
+	font-size: 0.9em;
+	color: #555;
+}
+
+.alice-dance {
+	float: right;
+	width: 25%; 
+	max-width: 250px;
+	min-width: 180px;
+	margin-left: 20px;
+	margin-bottom: 20px;
+}
+
+.discord-join {
+	clear: both; 
+	font-size: 1.2em;
+	font-weight: bold;
+	padding: 15px;
+	border: 2px dashed #999;
+	text-align: center;
+	margin: 2.5em 0;
+}
+
+.discord-icon-small {
+	height: 1.1em;
+	vertical-align: middle;
+	margin-right: 8px;
+}
+
+.discord-invite a {
+	text-decoration: none;
+}
+
+.visitor-counter {
+	text-align: center;
+	margin-top: 2em;
+}
+
+.visitor-counter p {
+	margin-bottom: 0.5em;
+}
+
+.visitor-counter img {
+	max-width: 300px;
+}
+
+@media (max-width: 768px) {
+	body {
+		text-align: center;
+		margin-top: 10px;
+		padding: 0 10px;
+	}
+	
+	h1.title {
+		justify-content: center;
+	}
+
+	.content-wrapper {
+		display: flex;
+		flex-direction: column;
+		overflow: visible;
+	}
+	
+	.main-content {
+		order: 1;
+	}
+	
+	header, .note, .discord-join, footer {
+		text-align: center;
+	}
+	
+	.alice-dance {
+		order: 2;
+		float: none;
+		margin: 20px auto;
+		width: 200px;
+	}
+}
