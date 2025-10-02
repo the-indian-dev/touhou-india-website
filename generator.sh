@@ -67,9 +67,9 @@ cat <<EOF > "$HTML_FILE"
                     </span>
                 </h1>
                 <nav class="main-nav">
-                    <b><a href="https://discord.gg/WUtvqWzggk" target="_blank">Join our server </a></b>
-                    &bull;
+                    <b><a href="https://discord.gg/WUtvqWzggk" target="_blank">Discord</a></b>
                     <b><a href="index.html">Home</a></b>
+                    <b><a href="https://www.reddit.com/r/TouhouIndia/" target="_blank">Related Subreddit</a></b>
                 </nav>
             </header>
             <p>Here are some of the fanarts drawn by our community members. The images are copyrights of the 
@@ -108,7 +108,7 @@ for image_path in "$SOURCE_DIR"/*.{jpg,jpeg,png}; do
         # Use first line for a cleaner alt text
         alt_text=$(head -n 1 "$text_file")
         alt_text=${alt_text//\"/}
-        echo $alt_text
+        #echo $alt_text
     else
         description="No description provided."
         alt_text="Gallery image $filename"
