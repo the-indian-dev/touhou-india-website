@@ -69,7 +69,7 @@ cat <<EOF > "$HTML_FILE"
                 <nav class="main-nav">
                     <b><a href="https://discord.gg/WUtvqWzggk" target="_blank">Discord</a></b>
                     <b><a href="index.html">Home</a></b>
-                    <b><a href="https://www.reddit.com/r/TouhouIndia/" target="_blank">Related Subreddit</a></b>
+                    <b><a href="https://www.reddit.com/r/TouhouIndia/" target="_blank">r/TouhouIndia</a></b>
                 </nav>
             </header>
             <p>Here are some of the fanarts drawn by our community members. The images are copyrights of the 
