@@ -67,14 +67,15 @@ cat <<EOF > "$HTML_FILE"
                     </span>
                 </h1>
                 <nav class="main-nav">
-                    <b><a href="https://discord.gg/WUtvqWzggk">Join our server </a></b>
+                    <b><a href="https://discord.gg/WUtvqWzggk" target="_blank">Join our server </a></b>
                     &bull;
                     <b><a href="index.html">Home</a></b>
                 </nav>
             </header>
             <p>Here are some of the fanarts drawn by our community members. The images are copyrights of the 
             respective owner if you want repost/reuse them please contact their respective owners. We have posted it here with their 
-            permission.</p>
+            permission. <a href="https://github.com/the-indian-dev/touhou-india-website/tree/master/gallery" target="_blank">Visit our Github repository</a> for uncompressed 
+            version of the fanarts.</p>
             <section class="gallery-container">
 EOF
 
@@ -96,8 +97,8 @@ for image_path in "$SOURCE_DIR"/*.{jpg,jpeg,png}; do
 
     # --- Image Conversion ---
     # Convert the image to .webp format and place it in the prod directory
-    # -quality 85 is a good balance between quality and file size
-    convert "$image_path" -quality 85 "$webp_output"
+    # compress and resize large images
+    convert "$image_path" -quality 60 -resize 900x900\> "$webp_output"
 
     # --- Read Description Text ---
     # Check if the corresponding text file exists
@@ -105,7 +106,9 @@ for image_path in "$SOURCE_DIR"/*.{jpg,jpeg,png}; do
         # Read the file content, escape HTML special characters, and replace newlines with <br>
         description=$(sed 's/&/\&amp;/g; s/</\&lt;/g; s/>/\&gt;/g' "$text_file" | awk 'NF > 0{printf "%s<br>", $0}' | sed 's/<br>$//')
         # Use first line for a cleaner alt text
-        alt_text=$(head -n 1 "$text_file" | sed 's/"/\\"/g')
+        alt_text=$(head -n 1 "$text_file")
+        alt_text=${alt_text//\"/}
+        echo $alt_text
     else
         description="No description provided."
         alt_text="Gallery image $filename"
