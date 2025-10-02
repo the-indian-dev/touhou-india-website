@@ -67,9 +67,9 @@ cat <<EOF > "$HTML_FILE"
                     </span>
                 </h1>
                 <nav class="main-nav">
-                    <a href="https://discord.gg/WUtvqWzggk">Join our server</a>
+                    <b><a href="https://discord.gg/WUtvqWzggk">Join our server </a></b>
                     &bull;
-                    <a href="index.html">Home</a>
+                    <b><a href="index.html">Home</a></b>
                 </nav>
             </header>
             <p>Here are some of the fanarts drawn by our community members. The images are copyrights of the 
