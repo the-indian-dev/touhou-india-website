@@ -51,6 +51,9 @@ cat <<EOF > "$HTML_FILE"
 
     <!-- Favicon -->
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+    <!-- Local dev env fix -->
+    <link rel="canonical" href="https://touhouindia.theindiandev.in/gallery"/>
 </head>
 <body>
     <main>
@@ -68,7 +71,7 @@ cat <<EOF > "$HTML_FILE"
                 </h1>
                 <nav class="main-nav">
                     <b><a href="https://discord.gg/WUtvqWzggk" target="_blank">Discord</a></b>
-                    <b><a href="index.html">Home</a></b>
+                    <b><a href="/">Home</a></b>
                     <b><a href="https://www.reddit.com/r/TouhouIndia/" target="_blank">r/TouhouIndia</a></b>
                 </nav>
             </header>
