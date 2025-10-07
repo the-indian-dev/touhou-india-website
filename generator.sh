@@ -42,7 +42,7 @@ cat <<EOF > "$HTML_FILE"
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Primary Meta Tags -->
-    <title>Gallery | Touhou Discord Server India</title>
+    <title>Community Gallery | Touhou India</title>
     <meta name="description" content="A gallery of community fanart and creations from the Touhou India Discord server.">
 
     <!-- Stylesheets -->
@@ -75,7 +75,7 @@ cat <<EOF > "$HTML_FILE"
                     <b><a href="https://www.reddit.com/r/TouhouIndia/" target="_blank">r/TouhouIndia</a></b>
                 </nav>
             </header>
-            <p>Here are some of the fanarts drawn by our community members. The images are copyrights of the 
+            <p>Here are some of the fanarts drawn by our community members from Touhou India Discord server. The images are copyrights of the 
             respective owner if you want repost/reuse them please contact their respective owners. We have posted it here with their 
             permission. <a href="https://github.com/the-indian-dev/touhou-india-website/tree/master/gallery" target="_blank">Visit our Github repository</a> for uncompressed 
             version of the fanarts.</p>
