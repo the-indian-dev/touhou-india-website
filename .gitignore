@@ -3,4 +3,8 @@ img/*.png
 img/*.gif
 index.html.bak
 .vscode/
+dist/
+.temp_copy_bytes
+.temp_css_bytes
+.temp_html_bytes
 
